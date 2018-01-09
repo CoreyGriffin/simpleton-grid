@@ -9,7 +9,9 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%; 
+  height: 100vh;
+}
 
   body {
     font-family: 'Raleway', sans-serif;
@@ -44,11 +46,21 @@ header {
 
 .header-content > p {
   margin-top: 0;
+  margin-bottom: 2rem;
   font-size: 2.4rem;
   font-weight: 300;
-  letter-spacing: 3.09px;
+  letter-spacing: 1.89px;
   line-height: 1.5;
   max-width: 800px;
+}
+
+.header-content .social {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #example {
@@ -90,4 +102,64 @@ header {
   font-size: 1.8rem;
   margin-top: 8px;
   letter-spacing: 2.31px;
+}
+
+#directions {
+  margin-top: 100px;
+}
+
+#directions > h3 {
+  color: #333333;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 3.8rem;
+}
+
+#directions > pre {
+  overflow-x: scroll;
+  background-color: #FAFAFA;
+  padding: 2.5rem;
+  margin-bottom: 4.5rem;
+}
+
+#directions > pre > code > strong {
+  color: #05B1F6;
+}
+
+#directions .code-example {
+  color: #555555;
+  white-space: pre;
+  font-size: 1.3rem;
+  padding: 2.5rem 3rem;
+  line-height: 1.75;
+  word-wrap: break-word;
+}
+
+#directions .direction-recap {
+  padding: 2.5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#directions .direction-recap > li {
+  padding: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+footer {
+  height: 8rem;
+  margin-top: 2rem;
+  background-image: linear-gradient(45deg, #07D4FA 0%, #03A9F4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > p {
+  color: #fff;
+  font-weight: 300;
 }

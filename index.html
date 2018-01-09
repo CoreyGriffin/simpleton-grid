@@ -14,7 +14,12 @@
 <header>
     <div class="header-content">
         <h1>SimpletonGrid</h1>
-        <p>SimpletonGrid is a simple flexbox based grid system that can be dropped into any project.</p>
+        <p>SimpletonGrid is a simple flexbox based grid system that can be dropped into any project 👍🏻</p>
+        <div class="social">
+            <a class="github-button" href="https://github.com/coreygriffin/simpleton-grid" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star coreygriffin/simpleton-grid on GitHub">Star</a>
+       
+            <a class="github-button" href="https://github.com/coreygriffin/simpleton-grid/fork" data-size="large" data-show-count="true" aria-label="Fork coreygriffin/simpleton-grid on GitHub">Fork</a>
+        </div>
     </div>
 </header>
 <main class="container center">
@@ -80,16 +85,48 @@
     </div>
     <button class="example--download">Download</button>
   </section>
-  <section>
+  <section id="directions">
     <h3>How do I use it?</h3>
-    <pre></pre>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
+    <pre>
+      <code class="code-example">
+          &lt;!-- .container is the main wrapper which can be centered with the .center helper class --&gt;
+          &lt;div class="<strong>container center</strong>"&gt;
+          &nbsp;
+          &lt;!-- rows are initiated with the .simple-row class and gutters can be applied with the .gutters helper class --&gt;
+            &lt;div class="<strong>simple-row gutters</strong>"&gt;
+            &lt;!-- columns should be immediate children of rows and are created with the .simple-col class --&gt;
+              &lt;div class="<strong>simple-col</strong>"&gt;1/4&lt;/div&gt;
+              &lt;div class="<strong>simple-col</strong>"&gt;1/4&lt;/div&gt;
+              &lt;div class="<strong>simple-col</strong>"&gt;1/4&lt;/div&gt;
+              &lt;div class="<strong>simple-col</strong>"&gt;1/4&lt;/div&gt;
+            &lt;/div&gt;
+            &nbsp;
+            &lt;!-- Since the layout is determined by the number columns added and flexbox will distrubuite evenly, there are a few one-off classes for uneven columns --&gt;
+            &lt;div class="<strong>simple-row gutters</strong>"&gt;
+              &lt;div class="<strong>simple-col-one-qt</strong>"&gt;25%&lt;/div&gt;
+              &lt;div class="<strong>simple-col-one-qt</strong>"&gt;25%&lt;/div&gt;
+              &lt;div class="<strong>simple-col-half</strong>"&gt;50%&lt;/div&gt;
+            &lt;/div&gt;
+            &nbsp;
+            &lt;div class="<strong>simple-row gutters</strong>"&gt;
+              &lt;div class="<strong>simple-col-one-qt</strong>"&gt;25%&lt;/div&gt;
+              &lt;div class="<strong>simple-col-three-qt</strong>"&gt;75%&lt;/div&gt;
+            &lt;/div&gt;
+            &nbsp;
+          &lt;/div&gt;
+      </code>
+    </pre>
+    <ul class="direction-recap">
+      <li>Simpleton comes with two helper classes: <strong>.center</strong> and <strong>.gutters</strong></li>
+      <li><strong>.container</strong> is the main wrapper for your layout and is available in 3 sizes:  <strong>.container-sm (960px)</strong> -
+          <strong>.container (1200px)</strong> - <strong>.container-lg (1400px)</strong>
+      </li>
+      <li><strong>.simple-col</strong> will always fill 100% of container unless a one-off class is used.</li>
     </ul>
   </section>
 </main>
-<footer>Brought to you by Corey Griffin</footer>
+<footer> <p>&copy; 2018 - Brought to you by Corey Griffin</p></footer>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
